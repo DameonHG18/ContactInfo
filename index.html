@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Contact Info</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+
+<body>
+	<form action="confirm.html" method="post">
+		<h1>My Contact Info</h1>
+		<div>
+			<label for="name">Name:</label>
+			<input type="text" name="name" id="name"
+					required autofocus
+					placeholder="John Doe"
+					title="Enter your full name">
+		</div>
+				<div>
+			<label for="email">E-Mail:</label>
+			<input type="email" name="email" id="email" 
+				   required
+				   placeholder="example@email.com"
+				   title="Enter a valid email address">
+		</div>
+
+		<div>
+			<label for="phone">Mobile phone:</label>
+			<input type="tel" name="phone" id="phone" 
+				   required
+				   pattern="\d{3}-\d{3}-\d{4}"
+				   placeholder="123-456-7890"
+				   title="Format: 123-456-7890">
+		</div>
+
+		<div>
+			<label for="zip">ZIP Code:</label>
+			<input type="text" name="zip" id="zip" 
+				   required
+				   pattern="\d{5}"
+				   placeholder="12345"
+				   title="5-digit ZIP code">
+		</div>
+
+		<div>
+			<label for="dob">Date of Birth:</label>
+			<input type="date" name="dob" id="dob" 
+				   required
+				   title="Select your date of birth">
+		</div>
+
+		<div>
+			<label></label>
+			<button type="submit" id="save">Save</button>
+			<button type="reset" id="reset">Reset</button>
+		</div>
+	</form>
+</body>
+</html>
