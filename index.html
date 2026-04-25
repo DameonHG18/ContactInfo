@@ -4,50 +4,50 @@
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Contact Info</title>
-    <link rel="stylesheet" type="text/css" href="contact.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 
 <body>
-	<form action="confirm.html" method="post">
+	<form id="contact_form" action="confirm.html" method="post">
 		<h1>My Contact Info</h1>
+
 		<div>
 			<label for="name">Name:</label>
-			<input type="text" name="name" id="name"
-					required autofocus
-					placeholder="John Doe"
-					title="Enter your full name">
+			<input type="text" id="name"
+			placeholder="John Doe"
+			title="Enter your full name">
+			<span id="name_error"></span>
 		</div>
-				<div>
+
+		<div>
 			<label for="email">E-Mail:</label>
-			<input type="email" name="email" id="email" 
-				   required
-				   placeholder="example@email.com"
-				   title="Enter a valid email address">
+			<input type="email" id="email"
+			placeholder="example@email.com"
+			title="Enter a valid email">
+			<span id="email_error"></span>
 		</div>
 
 		<div>
 			<label for="phone">Mobile phone:</label>
-			<input type="tel" name="phone" id="phone" 
-				   required
-				   pattern="\d{3}-\d{3}-\d{4}"
-				   placeholder="123-456-7890"
-				   title="Format: 123-456-7890">
+			<input type="text" id="phone"
+			placeholder="123-456-7890"
+			title="Format: 123-456-7890">
+			<span id="phone_error"></span>
 		</div>
 
 		<div>
 			<label for="zip">ZIP Code:</label>
-			<input type="text" name="zip" id="zip" 
-				   required
-				   pattern="\d{5}"
-				   placeholder="12345"
-				   title="5-digit ZIP code">
+			<input type="text" id="zip"
+			placeholder="12345"
+			title="5-digit ZIP code">
+			<span id="zip_error"></span>
 		</div>
 
 		<div>
 			<label for="dob">Date of Birth:</label>
-			<input type="date" name="dob" id="dob" 
-				   required
-				   title="Select your date of birth">
+			<input type="date" id="dob"
+			title="Select your dte of birth">
+			<span id="dob_error"></span>
 		</div>
 
 		<div>
@@ -56,5 +56,7 @@
 			<button type="reset" id="reset">Reset</button>
 		</div>
 	</form>
+
+	<script src="script.js"></script>
 </body>
 </html>
