@@ -31,3 +31,9 @@ button {
 span {
     color: red;
 }
+#confirm label {
+    padding-right: 0.5em;
+}
+.left {
+    text-align: left;
+}
